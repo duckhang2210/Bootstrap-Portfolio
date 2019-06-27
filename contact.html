@@ -3,54 +3,110 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    .navbar-brand , .btn-primary { 
+      background-color: #4aaaad ;
+      border-color: #4aaaad;
+    }
+    body {
+      background-image: url("assets/images/background.png");
+    }
+    .bodytitle h1 {
+      color: #4aaaad;
+    }
+.footer {
+  border-top: 5px solid #4aaaad;
+  height: 50px;
+}
+    @media screen and (max-width: 680px) {
+
+
+    } 
+  </style>
+
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Duc Khang Nguyen</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <div class="container-fluid bg-white" id="header"> 
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand pl-md-2 pr-md-2 text-white" href="index.html"><h1>Duc Khang Nguyen</h1></a> 
+            </nav>
+        </div>
+  
+        <div class="col-md-4">
+          <ul class="nav pt-md-2 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active text-secondary" href="index.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href=contact.html>Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
     </div>
-  </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
-
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-
-    </section>
-
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
+    <div class="container-fluid">
+      <div class="row my-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 pl-4 pr-4 bg-white bodytitle">
+          <h1>About Me</h1>
+          <div class="row">
+            <div class="col-md-12">
+            <form>
+              <div class="form-group">
+                <label for="uname">Your Name (required):</label>
+                <input type="text" class="form-control rounded-0" id="uname" placeholder="Please enter your name" name="uname" required>
+                
+                
+              </div>
+              <div class="form-group">
+                <label for="pwd">Email (required):</label>
+                <input type="email" class="form-control rounded-0" id="pwd" placeholder="Enter email: email@something.something" name="pswd" required>
+                
+                
+              </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea3">Message:</label>
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea3" rows="7"></textarea>
+                
+                
+              </div>
+          
+                  
+                </label>
+              </div>
+          </div>
+              <div class="row">
+                <div class="col-md-12 mb-3">
+              <button type="submit" class="btn btn-primary rounded-0">Submit</button>
+              
+                
+            </div>
+            </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div><!-- end row -->
     </div>
-  </footer>
+    <div class="container-fluid bg-dark navbar-dark fixed-bottom text-white text-center footer">
+        
+      Copyright
+    
+    </div>
 </body>
 
 </html>

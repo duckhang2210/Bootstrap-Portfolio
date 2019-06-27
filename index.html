@@ -3,48 +3,66 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>About | Your Name</title>
+  <title>Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
+
+
   <style>
-    .navbar-brand { 
-      background-color: #4aaaad ;
-    }
-  </style>
+      .navbar-brand , .btn-primary { 
+        background-color: #4aaaad ;
+        border-color: #4aaaad;
+      }
+      body {
+        background-image: url("assets/images/background.png");
+      }
+      .bodytitle h1 {
+        color: #4aaaad;
+      }
+  .footer {
+    border-top: 5px solid #4aaaad;
+    height: 50px;
+  }
+      @media screen and (max-width: 680px) {
+  
+  
+      } 
+    </style>
+
 </head>
 
 <body>
-  <div class="container-fluid"> 
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-4">
-          <nav class="navbar navbar-light">
-              <a class="navbar-brand pl-2 pr-2" href="index.html">Duc Khang Nguyen</a> 
-          </nav>
-      </div>
 
-      <div class="col-md-4">
-        <ul class="nav pt-md-2 justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+  <div class="container-fluid bg-white" id="header"> 
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <nav class="navbar navbar-light">
+                <a class="navbar-brand pl-md-2 pr-md-2 text-white" href="index.html"><h1>Duc Khang Nguyen</h1></a> 
+            </nav>
+        </div>
+  
+        <div class="col-md-4">
+          <ul class="nav pt-md-2 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active text-secondary" href="index.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2"></div>
       </div>
-      <div class="col-md-2"></div>
     </div>
-  </div>
 
   <div class="container-fluid">
       <div class="row my-5">
         <div class="col-md-2"></div>
-        <div class="col-md-8 pl-4 pr-4">
+        <div class="col-md-8 pl-4 pr-4 bg-white bodytitle">
           <h1>About Me</h1>
           <div class="row">
             <div class="col-3"><img class="img-fluid" src="assets/images/profilepic.jpg" alt=""></div>
@@ -64,11 +82,10 @@
 
 
 
-    <div class="card-footer fixed-bottom">
-          
-        <div class="mx-auto" style="width: 50px;">
-            Footer
-          </div>
+    <div class="container-fluid bg-dark navbar-dark fixed-bottom text-white text-center footer">
+        
+        Copyright
+      
       </div>
 </body>
 

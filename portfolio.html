@@ -7,22 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+
   <style>
-    .navbar-brand , .btn-primary { 
-      background-color: #4aaaad ;
-      border-color: #4aaaad;
-    }
-    body {
-      background-image: url("assets/images/background.png");
-    }
-    #bodytitle h1 {
-      color: #4aaaad;
-    }
-    @media screen and (max-width: 680px) {
-
-
-    } 
-  </style>
+      .navbar-brand , .btn-primary { 
+        background-color: #4aaaad ;
+        border-color: #4aaaad;
+      }
+      body {
+        background-image: url("assets/images/background.png");
+      }
+      .bodytitle h1 {
+        color: #4aaaad;
+      }
+  .footer {
+    border-top: 5px solid #4aaaad;
+    height: 50px;
+  }
+      @media screen and (max-width: 680px) {
+  
+  
+      } 
+    </style>
 
 </head>
 
@@ -46,7 +51,7 @@
               <a class="nav-link text-secondary" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" href="#">Contact</a>
+              <a class="nav-link text-secondary" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -58,7 +63,7 @@
     <div class="container-fluid">
         <div class="row my-5">
           <div class="col-md-2"></div>
-          <div class="col-md-8 pl-md-4 pr-md-4 bg-white" id="bodytitle">
+          <div class="col-md-8 pl-md-4 pr-md-4 bg-white bodytitle">
             <h1>Portfolio</h1>
             <div class="row pl-md-3">
                 <div class="card-columns">
@@ -115,29 +120,11 @@
       </div>  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  <footer>
-    <div class="container">
-      Copyright &copy;
-    </div>
-  </footer>
+      <div class="container-fluid bg-dark navbar-dark fixed-bottom text-white text-center footer">
+        
+          Copyright
+        
+        </div>
 </body>
 
 </html>
